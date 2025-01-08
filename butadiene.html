@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle in a Box: Butadiene Example</title>
+    <script type="text/javascript" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+        }
+        .equation {
+            font-family: "Courier New", monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #0074D9;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Particle in a Box: Butadiene Example</h1>
+    <p>The particle-in-a-box model can be applied to the <em>π</em> electrons in linear conjugated hydrocarbons such as butadiene (<strong>H<sub>2</sub>C=CH–CH=CH<sub>2</sub></strong>), which contains four <em>π</em> electrons. Although butadiene is not linear in reality, for simplicity, we assume the <em>π</em> electrons move along a straight line.</p>
+
+    <h2>Model and Parameters</h2>
+    <p>The length of the "box" is estimated as the total distance covered by the <em>π</em> electrons:</p>
+    <ul>
+        <li>2 C=C bond lengths: \( 2 \times 135 \, \text{pm} = 270 \, \text{pm} \)</li>
+        <li>1 C–C bond length: \( 154 \, \text{pm} \)</li>
+        <li>Two carbon atom radii: \( 2 \times 77 \, \text{pm} = 154 \, \text{pm} \)</li>
+    </ul>
+    <p>Total length: \( 578 \, \text{pm} \) or \( 578 \times 10^{-12} \, \text{m} \).</p>
+
+    <h2>Energy Levels</h2>
+    <p>The allowed energy levels are given by:</p>
+    <div class="equation">
+        \( E_n = \frac{h^2 n^2}{8m a^2}, \, n = 1, 2, 3, \ldots \)
+    </div>
+    <p>Here, \( h \) is Planck's constant, \( m \) is the mass of an electron (\( 9.109 \times 10^{-31} \, \text{kg} \)), and \( a \) is the box length (\( 578 \, \text{pm} \)).</p>
+
+    <h2>Transition Energy</h2>
+    <p>By the Pauli Exclusion Principle, each energy state can hold two electrons with opposite spins. For butadiene, the four <em>π</em> electrons occupy the \( n = 1 \) and \( n = 2 \) levels. The energy difference for a transition from \( n = 2 \) to \( n = 3 \) is:</p>
+    <div class="equation">
+        \( \Delta E = \frac{h^2}{8m a^2} \left(3^2 - 2^2\right) \)
+    </div>
+    <p>Substituting values:</p>
+    <div class="equation">
+        \( \Delta E = \frac{(6.626 \times 10^{-34})^2 \cdot (9)}{8 \cdot (9.109 \times 10^{-31}) \cdot (578 \times 10^{-12})^2} = 9.02 \times 10^{-19} \, \text{J} \)
+    </div>
+    <p>The corresponding wavenumber is:</p>
+    <div class="equation">
+        \( \tilde{\nu} = \frac{\Delta E}{hc} = \frac{9.02 \times 10^{-19}}{(6.626 \times 10^{-34})(3.00 \times 10^8)} = 4.54 \times 10^4 \, \text{cm}^{-1} \)
+    </div>
+
+    <h2>Comparison to Experimental Data</h2>
+    <p>Butadiene has an experimental absorption band at \( 4.61 \times 10^4 \, \text{cm}^{-1} \). This shows that the particle-in-a-box model provides a reasonable approximation for explaining the absorption spectrum of conjugated systems like butadiene.</p>
+
+    <div class="center">
+        <h3>Energy Level Diagram</h3>
+        <img src="your_image_here.png" alt="Energy level diagram for butadiene" />
+    </div>
+</body>
+</html>
