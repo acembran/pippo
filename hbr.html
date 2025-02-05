@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hydrogen Bromide Infrared Spectrum</title>
+</head>
+<body>
+
+<h1>Hydrogen Bromide Infrared Spectrum</h1>
+
+<p>
+  Suppose the infrared spectrum of <sup>75</sup>Br<sup>19</sup>F shows an intense line
+  at 380&nbsp;cm<sup>−1</sup>. Let’s calculate the force constant <em>k</em> 
+  for this diatomic molecule.
+</p>
+
+<h2>Derivation</h2>
+
+<ol>
+  <li>
+    For a diatomic molecule treated as a harmonic oscillator, 
+    its fundamental vibrational frequency (in s<sup>−1</sup>) is
+    <br>
+    <em>ν</em> = 
+    (1 / 2π) 
+    √( <em>k</em> / µ ).
+  </li>
+  <li>
+    Solving for <em>k</em> gives:
+    <br>
+    <em>k</em> = (2π <em>ν</em>)<sup>2</sup> · µ.
+  </li>
+  <li>
+    We often measure IR frequencies in wavenumbers, 
+    <em>ν</em><span style="text-decoration:overline;">&#x303;</span> 
+    (cm<sup>−1</sup>) rather than Hz. 
+    Since <em>ν</em> = <em>c</em> <em>ν</em><span style="text-decoration:overline;">&#x303;</span>,
+    <br>
+    <em>k</em> = (2π <em>c</em> <em>ν</em><span style="text-decoration:overline;">&#x303;</span>)<sup>2</sup> · µ.
+  </li>
+</ol>
+
+<p>
+  Thus, once you know the reduced mass µ and the wavenumber 
+  <em>ν</em><span style="text-decoration:overline;">&#x303;</span>, 
+  you can directly compute <em>k</em>.
+</p>
+
+<h2>Solution Example</h2>
+
+<p>
+  The reduced mass for <sup>75</sup>Br<sup>19</sup>F (in kg) is found by:
+</p>
+
+<p style="text-indent:2em;">
+  µ = 
+  [ (75.0 amu) × (19.0 amu) / (75.0 + 19.0) amu ]
+  × 
+  (1.661 × 10<sup>−27</sup> kg·amu<sup>−1</sup>)
+  = 2.52 × 10<sup>−26</sup> kg
+</p>
+
+<p>
+  Using <em>ν</em><span style="text-decoration:overline;">&#x303;</span> = 380&nbsp;cm<sup>−1</sup>:
+</p>
+
+<p style="text-indent:2em;">
+  <em>k</em> = [ 2π (2.998 × 10<sup>8</sup> m·s<sup>−1</sup>) 
+                (380&nbsp;cm<sup>−1</sup>) 
+                (100&nbsp;cm·m<sup>−1</sup>) ]<sup>2</sup> 
+              × (2.52 × 10<sup>−26</sup> kg)
+  <br>
+  = 129&nbsp;kg·s<sup>−2</sup> = 129&nbsp;N·m<sup>−1</sup>.
+</p>
+
+</body>
+</html>
